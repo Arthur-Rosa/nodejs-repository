@@ -27,7 +27,6 @@ class Library {
 
   async addBook(title, author, isbn) {
     const book = { title, author, isbn };
-
     const bookExist = await this.getBook(isbn);
 
     if (bookExist == null) {
